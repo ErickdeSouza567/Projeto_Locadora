@@ -1,0 +1,84 @@
+<mat-toolbar color="primary">
+  <button (click)="sidenav.toggle()" mat-icon-button>
+    <mat-icon> menu </mat-icon>
+  </button>
+  <span> Ecommerce </span>
+</mat-toolbar>
+
+<mat-sidenav-container class="container">
+  <mat-sidenav #sidenav [opened]="true" mode="side">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/pages/filme/cadastrar">
+        <div class="item">
+          <mat-icon class="icon"> add </mat-icon>
+          <span>Cadastrar Filmes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/filme/listar">
+        <div class="item">
+          <mat-icon class="icon"> list </mat-icon>
+          <span>Listar Filmes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/filme/alterar">
+        <div class="item">
+          <mat-icon class="icon"> edit </mat-icon>
+          <span>Alterar Filmes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/filme/deletar">
+        <div class="item">
+          <mat-icon class="icon"> delete </mat-icon>
+          <span>Deletar Filmes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/cliente/cadastrar">
+        <div class="item">
+          <mat-icon class="icon"> add </mat-icon>
+          <span>Cadastrar Clientes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/cliente/listar">
+        <div class="item">
+          <mat-icon class="icon"> list </mat-icon>
+          <span>Listar Clientes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/cliente/alterar">
+        <div class="item">
+          <mat-icon class="icon"> edit </mat-icon>
+          <span>Alterar Clientes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/cliente/deletar">
+        <div class="item">
+          <mat-icon class="icon"> delete </mat-icon>
+          <span>Deletar Clientes</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/locacao/cadastrar">
+        <div class="item">
+          <mat-icon class="icon"> add </mat-icon>
+          <span>Cadastrar Locação</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/locacao/listar">
+        <div class="item">
+          <mat-icon class="icon"> list </mat-icon>
+          <span>Listar Locações</span>
+        </div>
+      </a>
+      <a mat-list-item routerLink="/pages/locacao/deletar">
+        <div class="item">
+          <mat-icon class="icon"> delete </mat-icon>
+          <span>Deletar Locação</span>
+        </div>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet>
+      <!-- Mostrar os componentes selecionados -->
+    </router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,21 @@
+### Cadastrar uma Locação
+POST http://localhost:5116/api/locacao/cadastrar
+Content-Type: application/json
+
+{
+    "Valor": 10.99,
+    "Observacoes": "Observações adicionais (opcional)",
+    "filmeId": 2,
+    "clienteId": 2
+}
+
+### Buscar uma Locação por ID (Read)
+GET http://localhost:5116/api/locacao/buscar/3
+
+
+### Deletar uma Locação por ID (Delete)
+DELETE http://localhost:5116/api/locacao/deletar/3
+
+
+### Listar todas as Locações (Read)
+GET http://localhost:5116/api/locacao/listar
